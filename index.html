@@ -4,30 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FCC-Landing page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header id="header">
-        <img src="" alt="" id="header-img">
+        <div>
+        <img src="images/tromb.png" alt="trombone" id="header-img">
+        </div>
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
-                <li class="nav-link"></li>
+                <li class="nav-link"><a href="#features">Features</a></li>
+                <li class="nav-link"><a href="#video">How It Works</a></li>
+                <li class="nav-link"><a href="#pricing">Pricing</a></li>
             </ul>
         </nav>
-        <main>
-            <iframe src="" frameborder="0" id="video">
-
-            </iframe>
-            <form action="https://www.freecodecamp.com/email-submit" id="form">
-                <input type="text" id="email" placeholder="Enter your email" required>
-                <input type="submit" id="submit">
+    </header>
+        <main class="form">
+            <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                <label for="email">Handcrafted, home-made masterpieces</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <input type="submit" value="GET STARTED" id="submit">
             </form>
         </main>
-    </header>
+            <section class="products" id="features">
+                <div class="pro-wrapper">
+                    <div class="icon-wrapper">
+                    <i class="fas fa-fire" id="fire"></i>
+                </div>
+                    <div>
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
+                </div>
+                <div class="pro-wrapper">
+                    <div class="icon-wrapper">
+                    <i class="fas fa-truck"></i>
+                </div>
+                    <div>
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="pro-wrapper">
+                    <div class="icon-wrapper">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                    <div>
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </section>
+            <iframe id="video" src="https://www.youtube.com/watch?v=9z3jCiCrsx0&list=RDGMEM8h-ASY4B42jYeBhBnqb3-w&start_radio=1&rv=y8Yv4pnO7qc" id="video">
+
+            </iframe>
+            <section class="cards" id="pricing">
+                <div class="card">
+                    <h2>TENOR TROMBONE</h2>
+                    <p>$600</p>
+                    <p class="lorem">Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.</p>
+                    <button>SELECT</button>
+                </div>
+                <div class="card">
+                    <h2>BASS TROMBONE</h2>
+                    <p>$900</p>
+                    <p class="lorem">Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.</p>
+                    <button>SELECT</button>
+                </div>
+                <div class="card">
+                    <h2>VALVE TROMBONE</h2>
+                    <p>$1200</p>
+                    <p class="lorem">Plays similar to a Trumpet
+                        Great for Jazz Bands. Lorem ipsum. Lorem ipsum</p>
+                    <button>SELECT</button>
+                </div>
+            </section>
+            <footer>
+                <ul>
+                    <li class="footer-link"><a href="">Privacy</a></li>
+                    <li class="footer-link"><a href="">Terms</a></li>
+                    <li class="footer-link"><a href="">Contact</a></li>
+                </ul>
+                <p>CopyRight 2016, Original Trombones</p>
+            </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-   
     <script  src="js/index.js"></script>
 </body>
 </html>
